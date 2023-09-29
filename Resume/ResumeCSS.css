@@ -1,5 +1,9 @@
-.header, .skills, .tskills, .education, .exp, .intro{
-    background-color: lightskyblue;
-    font-family: 'Courier New', Courier, monospace;
-    width: 50%;}
+.skills, .tskills, .education, .exp, .intro{
+font-family: 'Courier New', Courier, monospace;
+width: 49%;}
 
+.name{border-width: 5px;
+border-style: outset;
+border-color: black;
+background-color: lightskyblue;
+font-family: 'Courier New', Courier, monospace;}
