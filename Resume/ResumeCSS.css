@@ -1,1 +1,5 @@
-.header{background-color: purple;}
+.header, .skills, .tskills, .education, .exp, .intro{
+    background-color: lightskyblue;
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;}
+
