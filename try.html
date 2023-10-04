@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="trycss.css">
+<h1 id="title">Valorant Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <form id="survey-form">
+    <div class="input-element">
+      <label id="name-label">
+        Name
+      </label>
+      <input placeholder="name" id="name" type="text"
+  required/>
+    </div>
+    <div class="input-element">
+      <label id="email-label">
+        Email
+      </label>
+      <input placeholder="email" id="email" type="text" 
+  required/>
+    </div>
+    <div class="input-element">
+      <label id="number-label">
+        Age
+      </label>
+      <input placeholder="age" id="number" min="5"
+  max "100" type="number" required/>
+    </div>
+    <div class="input-element">
+      <label id="select-label">
+        Who's your favorite team?
+      </label>
+      <select id="dropdown">
+        <option>SENTINELS</option>
+        <option>TEAM SECRET</option>
+        <option>DRX</option>
+        <option>PRX</option>
+        <option>EVIL GENIUSES</option>
+        <option>LOUD</option>
+      </select>
+    </div>
+
+    <div class="radio">
+
+    <label>Would you recommend Valorant to a friend?</label>
+      <label class="radio"><input type="radio" name="game"/>Definitely</label>
+      <label class="radio"><input type="radio" name="game"/>Maybe</label>
+      <label class="radio"><input type="radio" name="game"/>Not sure</label>
+    </div>
+
+
+        <label>Which suggestions are good ideas for the Valorant to implement?</label>
+      <div>
+      <label><input type="checkbox"
+    name="ideas" value="rank"/>Ranked Mode Improvements</label>
+      </div>
+      <div>
+      <label><input type="checkbox"
+    name="ideas" value="new"/>New Agents and Weapon Skins</label>
+      </div>
+      <div>
+      <label><input type="checkbox"
+      name="ideas" value="support"/>Esports Support</label>
+      </div>
+      <div>
+        <label><input type="checkbox"
+      name="ideas" value="balance"/>Balance and Agent Tweaks</label>
+      </div>
+      <div>
+        <label><input type="checkbox"
+      name="ideas" value="feature"/>Community Features</label>
+      </div>
+    </div>
+    <div class="input-element">
+      <label>Additional comments</label>
+      <textarea type="text"></textarea>
+      </div>
+      <button type="submit" id="submit">
+        Submit
+        </button>
+
+  </form>
