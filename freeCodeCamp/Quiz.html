@@ -48,12 +48,14 @@
               <ul class="answers-list">
                 <li>
                   <label for="q1-a1">
-                    <input id="q1-a1" type="radio" value="True" name="1"/>True
+                    <input type="radio" id="q1-a1" name="q1" value="true" />
+                    True
                   </label>
                 </li>
                 <li>
                   <label for="q1-a2">
-                    <input id="q1-a2" type="radio" value="False" name="1"/>False
+                    <input type="radio" id="q1-a2" name="q1" value="false" />
+                    False
                   </label>
                 </li>
               </ul>
@@ -69,12 +71,14 @@
               <ul class="answers-list">
                 <li>
                   <label for="q2-a1">
-                    <input id="q2-a1" type="radio" value="True" name="2"/>True
+                    <input type="radio" id="q2-a1" name="q2" value="true" />
+                    True
                   </label>
                 </li>
                 <li>
                   <label for="q2-a2">
-                    <input id="q2-a2" type="radio" value="False" name="2"/>False
+                    <input type="radio" id="q2-a2" name="q2" value="false" />
+                    False
                   </label>
                 </li>
               </ul>
@@ -84,18 +88,25 @@
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">CSS</h2>
           <div class="formrow">
-            <div class="question-block"><label for="customer" name="customer">Are you a frontend developer?</label></div>
-            <div class="answer"><select required id="customer" name="customer">
-              <option value="">Select an option</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select></div>
-            <div class="question-block"><label for="css-questions">Do you have any questions:</label></div>
-            <div class="answer"><textarea placeholder="Who is flexbox..." id="css-questions" name="css-questions" id="" cols="5" rows="24"></textarea></div>
-
+            <div class="question-block">
+              <label for="customer">Are you a frontend developer?</label>
+            </div>
+            <div class="answer">
+              <select name="customer" id="customer" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-questions">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
+            </div>
           </div>
         </section>
-        <input type="submit" value="Send">
+        <button type="submit">Send</button>
       </form>
     </main>
     <footer>
