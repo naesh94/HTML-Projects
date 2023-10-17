@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styles.css" rel="stylesheet"/>
-        <title>Survey Form</title>
-    </head>
-    <body>
-        <h1 id="title">Survey Form</h1>
-        <p id="description">Thank you for taking your time to answer this survey, it will be much appreciated</p>
-        <form action="" id="survey-form">
-            <label id="name-label">Name <input type="text" id="name" required placeholder="Write your Fullname"></label>
-            
-            <label id="email-label">Email <input type="email" id="email" required placeholder="Write your email"></label>
-             
-            <label id="number-label">Age(Optional) <input type="number" id="number"  max="12" min="100" placeholder="Input age (12-100)"></label>
-            
-            <select id="dropdown"></select>
-            <option></option>
-            <option></option>
-            <option></option>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet"/>
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking your time to answer this survey; it will be much appreciated.</p>
+    <form action="" id="survey-form">
+        <label id="name-label">Name <input type="text" id="name" required placeholder="Write your Full Name"></label>
+        
+        <label id="email-label">Email <input type="email" id="email" required placeholder="Write your email"></label>
+         
+        <label id="number-label">Age (Optional) <input type="number" id="number" max="100" min="12" placeholder="Input age (12-100)"></label>
+        
+        <label for="dropdown">Select your favorite color:</label>
+        <select id="dropdown">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="other">Other</option>
+        </select>
 
-            <label for=""><input type="radio" value="Yes" name="yes"></label>
-            <label for=""><input type="radio" value="No" name="no"></label>
+        <p>Do you like outdoor activities?</p>
+        <label for="yes"><input type="radio" id="yes" value="Yes" name="outdoor-activities">Yes</label>
+        <label for="no"><input type="radio" id="no" value="No" name="outdoor-activities">No</label>
 
-            <label for=""><input type="checkbox" value="Enjoyable"></label>
-            <label for=""><input type="checkbox" value="Time Consuming"></label>
-            <label for=""><input type="checkbox" value="Difficult"></label> 
+        <p>What are your thoughts on this survey?</p>
+        <label for="enjoyable"><input type="checkbox" id="enjoyable" value="Enjoyable" name="thoughts">Enjoyable</label>
+        <label for="time-consuming"><input type="checkbox" id="time-consuming" value="Time Consuming" name="thoughts">Time Consuming</label>
+        <label for="difficult"><input type="checkbox" id="difficult" value="Difficult" name="thoughts">Difficult</label>
 
-            <label for=""><textarea name="comment" id="comment" cols="30" rows="10"></textarea></label>
+        <label for="comment">Any additional comments:</label>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Write your comments here"></textarea>
 
-            <input type="submit" id="submit">
-        </form>
-    </body>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
 </html>
