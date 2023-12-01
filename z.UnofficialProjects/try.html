@@ -1,80 +1,145 @@
-<link rel="stylesheet" href="trycss.css">
-<h1 id="title">Valorant Survey Form</h1>
-<p id="description">Thank you for taking the time to help us improve the platform</p>
+<!DOCTYPE html>
+<html lang="en">
 
-  <form id="survey-form">
-    <div class="input-element">
-      <label id="name-label">
-        Name
-      </label>
-      <input placeholder="name" id="name" type="text"
-  required/>
-    </div>
-    <div class="input-element">
-      <label id="email-label">
-        Email
-      </label>
-      <input placeholder="email" id="email" type="text" 
-  required/>
-    </div>
-    <div class="input-element">
-      <label id="number-label">
-        Age
-      </label>
-      <input placeholder="age" id="number" min="5"
-  max "100" type="number" required/>
-    </div>
-    <div class="input-element">
-      <label id="select-label">
-        Who's your favorite team?
-      </label>
-      <select id="dropdown">
-        <option>SENTINELS</option>
-        <option>TEAM SECRET</option>
-        <option>DRX</option>
-        <option>PRX</option>
-        <option>EVIL GENIUSES</option>
-        <option>LOUD</option>
-      </select>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="trycss.css">
+  <title>Personal Portfolio Webpage</title>
+</head>
 
-    <div class="radio">
-
-    <label>Would you recommend Valorant to a friend?</label>
-      <label class="radio"><input type="radio" name="game"/>Definitely</label>
-      <label class="radio"><input type="radio" name="game"/>Maybe</label>
-      <label class="radio"><input type="radio" name="game"/>Not sure</label>
+<body>
+  <!-- PAGE ABOUT -->
+  <header id="about">
+    <nav id="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="welcome-section" class="container">
+      <h1 id="title">I am Mike Julius Coloma</h1>
+      <p class="lead"><em>a web developer</em></p>
     </div>
+  </header>
 
+  <!-- PROJECT SECTION -->
+  <section id="projects">
+    <div class="project-tile">
+      <h1 id="caption">"These are some of my projects"</h1><br>
+      <div id="bottom-line"></div>
+      <div class="projects">
+        <div class="box">
+          <a target="_blank" href="https://freecodecamp-solutions.github.io/Survey-Form/">
+            <img src="https://github.com/clmJuls/Portfolio.github.io/blob/main/Survey.png?raw=true" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Survey Form
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
 
-        <label>Which suggestions are good ideas for the Valorant to implement?</label>
-      <div>
-      <label><input type="checkbox"
-    name="ideas" value="rank"/>Ranked Mode Improvements</label>
+        <div class="box">
+          <a target="_blank" href="https://freecodecamp-solutions.github.io/Tribute-Page/" alt="project-img" class="project-img">
+            <img src="https://github.com/clmJuls/Portfolio.github.io/blob/main/TributePage.png?raw=true" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Tribute Page
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+
+        <div class="box">
+          <a target="_blank" href="https://freecodecamp-solutions.github.io/Technical-Documentation-Page/">
+            <img src="https://github.com/clmJuls/Portfolio.github.io/blob/main/Documentation.png?raw=true" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Documentation Page
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+
+        <div target="_blank" class="box">
+          <a href="https://freecodecamp-solutions.github.io/Product-Landing-Page/">
+            <img src="https://github.com/clmJuls/Portfolio.github.io/blob/main/ProductLanding.png?raw=true" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Landing Page
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+
+        <div target="_blank" class="box">
+          <a href="https://freecodecamp-solutions.github.io/Nutrition-label/">
+            <img src="https://github.com/clmJuls/Portfolio.github.io/blob/main/Nutrition.png?raw=true" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Personal Site
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+
+        <div target="_blank" class="box">
+          <a href="https://freecodecamp-solutions.github.io/Picasso-Painting/">
+            <img src="https://github.com/clmJuls/Portfolio.github.io/blob/main/Picasso.png?raw=true" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Picasso Painting
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
       </div>
-      <div>
-      <label><input type="checkbox"
-    name="ideas" value="new"/>New Agents and Weapon Skins</label>
-      </div>
-      <div>
-      <label><input type="checkbox"
-      name="ideas" value="support"/>Esports Support</label>
-      </div>
-      <div>
-        <label><input type="checkbox"
-      name="ideas" value="balance"/>Balance and Agent Tweaks</label>
-      </div>
-      <div>
-        <label><input type="checkbox"
-      name="ideas" value="feature"/>Community Features</label>
+      <a href="https://github.com/clmJuls/Portfolio.github.io.git" class="btn">Show More</a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    
+    <div class="container">
+      <h1>Let's work together...</h1>
+      <p>Need help with your project? Just ask!</p>
+      <div class="social">
+        <div>
+          <a target="_blank" href="https://www.facebook.com/KazhumiPH">
+            <i class="fab fa-facebook fa-1x"></i>
+            Facebook
+          </a>
+          <a id="profile-link" target="_blank" href="https://github.com/clmJuls">
+            <i class="fab fa-github fa-1x"></i>
+            Github
+          </a>
+          <a target="_blank" href="https://twitter.com/KazhumiK">
+            <i class="fab fa-twitter fa-1x"></i>
+            Twitter
+          </a>
+          <a href="#">
+            <i class="fas fa-envelope-open-text fa-1x"></i>
+            Mail
+          </a>
+          <a href="#">
+            <i class="fas fa-phone fa-1x"></i>
+            Call Me
+          </a>
+        </div>
       </div>
     </div>
-    <div class="input-element">
-      <label>Additional comments</label>
-      <textarea type="text"></textarea>
-      </div>
-      <button type="submit" id="submit">
-        Submit
-        </button>
+  </section>
 
-  </form>
+  <!-- FOOTER SECTION -->
+
+
+  <footer id="main-footer">
+    <div class="container">
+     
+    </div>
+  </footer>
+</body>
+</html>
