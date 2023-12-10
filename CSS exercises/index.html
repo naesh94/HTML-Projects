@@ -1,41 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles\styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
-    <h2>Exercise 1</h2>
+    <nav id="navbar">
+        <header class="header">CSS Exercises</header>
+        <a class="nav-link" href="#Exercise1">Exercise 1</a>
+        <a class="nav-link" href="#Exercise2">Exercise 2</a>
+        <a class="nav-link" href="#Exercise3">Exercise 3</a>
+        <a class="nav-link" href="#Exercise4">Exercise 4</a>
+        <a class="nav-link" href="#Exercise5">Exercise 5</a>
+        <a class="nav-link" href="#Exercise6">Exercise 6</a>
+        <a class="nav-link" href="#Exercise7">Exercise 7</a>
+        <a class="nav-link" href="#Exercise8">Exercise 8</a>
+        <a class="nav-link" href="#Exercise9">Exercise 9</a>
+        <h1 style="font-family: 'Courier New', Courier, monospace; ">By : Vicente, Jerrviz P.</h1>
+    </nav>
+    <main class="main">
+        <h1 style="text-align: center; color: rgb(255, 255, 255);">CSS EXERCISES</h1>
+    <h2 id="Exercise1">Exercise 1</h2>
+    <p><b>Exercise 1: Basic Box Model
+        - Create a simple webpage with three boxes. Apply different background colors, borders, and margins to each box. Experiment with padding to see how it affects the content within the boxes.</b></p>
     <div class="box">
     <div class="box1">Box1</div>
     <div class="box2">Box2</div>
     <div class="box3">Box3</div>
     </div>
-    <h2>Exercise 2</h2>
-    <div class="center">OBET</div>
-    <h2>Exercise 3</h2>
+    <h2 id="Exercise2">Exercise 2</h2>
+    <p><b>Exercise 2: Centering Elements
+        - Create a container and center its content both horizontally and vertically using margin and padding.</b></p>
+    <div class="center">CENTER</div>
+    <h2 id="Exercise3">Exercise 3</h2>
+    <p><b>Exercise 3: Floating Elements
+        - Use the float property to create a layout where three boxes are side by side. Experiment with clearing floats to avoid layout issues.</b></p>
     <div class="float">
     <div class="float-box">Box 1</div>
     <div class="float-box">Box 2</div>
     <div class="float-box">Box 3</div>
     <div class="clearfix"></div>
     </div>
-    <h2>Exercise 4</h2>
+    <h2 id="Exercise4">Exercise 4</h2>
+    <p><b>Exercise 4: Responsive Design with Media Queries
+        - Make your webpage responsive by using media queries. Adjust the layout, font sizes, or any other styles to provide a good user experience on both desktop and mobile devices.</b></p>
     <div class="media">
     <div class="media-box" id="media-box1">Box 1</div>
     <div class="media-box" id="media-box2">Box 2</div>
     <div class="media-box" id="media-box3">Box 3</div>
     </div>
-    <h2>Exercise 5</h2>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <h2 id="Exercise5">Exercise 5</h2>
+    <p><b>Exercise 5: Flexbox Layout
+        - Create a navigation bar using Flexbox. Make sure the items are evenly spaced and aligned horizontally. Add responsiveness using Flexbox properties.</b></p>
+    <nav class="enav">
+        <a href="#Exercise1">Exercise 1</a>
+        <a href="#Exercise2">Exercise 2</a>
+        <a href="#Exercise3">Exercise 3</a>
+        <a href="#Exercise4">Exercise 4</a>
+    </nav>
+    <div>
+        <h2 id="Exercise6">Exercise 6</h2>
+        <p><b>Exercise 6: Grid Layout
+            - Build a grid-based layout with CSS Grid. Create a section with multiple items, and use grid properties to define the layout.</b></p>
+        <div class="grid-container">
+            <div class="grid-item">Item 1</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+            <div class="grid-item">Item 4</div>
+            <div class="grid-item">Item 5</div>
+            <div class="grid-item">Item 6</div>
+        </div>
+    </div>
+    <h2 id="Exercise7">Exercise 7</h2>
+    <p><b>Exercise 7: Complex Layout
+        - Combine Flexbox and CSS Grid to create a more complex layout. For example, have a header, sidebar, main content area, and a footer. Experiment with different arrangements and sizes.</b></p>
+    <div class="seven">
+        
+        <header class="headerseven">
+            <h1>My Complex Layout</h1>
+        </header>
+    
+        <main class="mainseven">
+            <sidebar class="sideseven">
+                <h2 class="hseven">Sidebar</h2>
+                <p class="pseven">Content in the sidebar...</p>
+            </sidebar>
+    
+            <article class="articleseven">
+                <h2 class="hseven">Main Content</h2>
+                <p class="pseven">This is the main content area...</p>
+            </article>
+        </main>
+    
+        <footer class="footerseven">
+            <p>Footer content goes here.</p>
+        </footer>
+    
+    </div>
+    <h2 id="Exercise8">Exercise 8</h2>
+    <p><b>Exercise 8: Card Layout
+        - Design a card layout commonly used for displaying content like articles or product cards. Use the box model, and consider adding hover effects or transitions for a polished look.</b></p>
+    <div class="eight">
+        <div class="card">
+            <img src="https://blog.logrocket.com/wp-content/uploads/2022/11/best-css-background-generators.png" alt="Card Image">
+            <div class="card-content">
+                <h2 class="card-title">Card Title</h2>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="card-footer">
+                    <div class="author-info">
+                        <img class="author-avatar" src="https://upload.wikimedia.org/wikipedia/commons/9/96/H%C3%A5kon-Wium-Lie-2009-03.jpg" alt="Author Avatar">
+                        <span class="author-name">John Doe</span>
+                        <span class="author-date">Dec 10, 2023</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 id="Exercise9">Exercise 9</h2>
+    <p><b>Exercise 9: Nesting Elements
+        - Create a structure where boxes are nested inside each other. Apply different styles to parent and child elements to see how they interact.</b></p>
+    <div class="nine">
+        <div class="parent-box">
+            <p>This is the parent box.</p>
+    
+            <div class="child-box">
+                <p>This is the child box.</p>
+    
+                <div class="grandchild-box">
+                    <p>This is the grandchild box.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>
 

@@ -1,0 +1,365 @@
+  
+  h2,p{color: white;
+  }
+
+
+  .header{font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 30px;
+  margin: 30px 0;}
+
+  #navbar {
+    background-image:
+    linear-gradient(to bottom, rgba(136, 162, 247, 0.52), rgba(13, 19, 58, 0.73));
+    position: fixed;
+    font-family: fantasy;
+    font-size: 20px;
+    width: 250px;
+    height: 100%;
+    overflow-y: scroll;
+    text-align: center;
+  }
+
+  .nav-link {
+    color: aliceblue;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: underline overline;
+    margin: 10px 0;;
+  }
+
+  .nav-link:hover {
+    background-color: white;
+    color: #000137;
+  }
+
+  .main{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 20, 87, 0.52), rgba(13, 19, 58, 0.73)),
+    url('img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    margin-left: 280px; 
+    padding: 20px;
+  }
+  /*Exercise 1 CSS*/
+  .box {
+    display: flex;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+  }
+  .box1 {
+    background-color: #ff9999; 
+    border: 3px solid #cc0000; 
+    margin: 150px 100px 150px 100px;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .box2 {
+    background-color: #99ff99; 
+    border: 3px double #006600; 
+    margin: 120px 100px 120px 50px;
+    padding: 75px;
+    text-align: center;
+  }
+
+  .box3 {
+    background-color: #9999ff; 
+    border: 3px dashed #0000cc; 
+    margin: 100px 500px 100px 50px;
+    padding: 100px;
+    text-align: center;  
+  }
+
+/*Exercise 2 CSS*/
+
+  .center{background-color: beige;
+    border: 3px solid black;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+  }
+
+/*Exercise 3 CSS*/
+
+  .float{
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  .float-box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    background-color: orange;
+    text-align: center;
+    line-height: 200px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Exercise 4 CSS*/
+
+.media {
+  font-family: Arial, sans-serif;
+  margin: 100px;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.media-box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+#media-box1 {
+  background-color: red;
+}
+
+#media-box2 {
+  background-color: green;
+}
+
+#media-box3 {
+  background-color: blue;
+}
+
+@media screen and (max-width: 600px) {
+  .media-box {
+      width: 80%;
+      padding: 10px;
+  }
+}
+
+/*Exercise 5 CSS*/
+
+
+.enav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.enav a {
+  text-align: center;
+  line-height: 200px;
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  border: 1px solid #000137;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000137;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.enav a:hover {
+  background-image: url(img.jpg);
+  background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .enav {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .enav a {
+      margin-top: 5px;
+  }
+}
+
+/*Exercise 6 CSS*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 20px; /* Gap between grid items */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #dddddd;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*Exercise 7 CSS*/
+
+.seven {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+  min-height: 100vh;
+}
+
+.headerseven {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.mainseven {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Sidebar, Main Content */
+  gap: 20px;
+  padding: 20px;
+}
+
+.sideseven {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.articleseven {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+
+}
+
+.footerseven {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.hseven, .pseven{color: black;}
+
+/*Exercise 8 CSS*/
+
+.eight {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.card-description {
+  color: #666;
+}
+
+.card-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+}
+
+.author-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.author-name {
+  font-weight: bold;
+  margin-top: -100px;
+}
+
+.author-date{
+  margin-left: -40px;
+  margin-bottom: -50px;
+}
+
+/*Exercise 9 CSS*/
+
+.nine {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: -200px;
+}
+
+.parent-box {
+  background-color: #3498db;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.child-box {
+  background-color: #e74c3c;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.grandchild-box {
+  background-color: #2ecc71;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
