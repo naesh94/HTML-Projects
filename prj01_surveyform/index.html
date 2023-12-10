@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet"/>
+    <link href="styles\styles.css" rel="stylesheet"/>
     <title>Survey Form</title>
 </head>
 <body>
@@ -16,25 +16,25 @@
          
         <label id="number-label">Age (Optional) <input type="number" id="number" max="100" min="12" placeholder="Input age (12-100)"></label>
         
-        <label for="dropdown">Select your favorite color:</label>
+        <label for="dropdown">Select your favorite language:</label>
         <select id="dropdown">
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-            <option value="yellow">Yellow</option>
+            <option value="red">Python</option>
+            <option value="blue">Java</option>
+            <option value="green">C++</option>
+            <option value="yellow">Javascript</option>
             <option value="other">Other</option>
         </select>
 
-        <p>Do you like outdoor activities?</p>
+        <p>Did you mastered this language?</p>
         <label for="yes"><input type="radio" id="yes" value="Yes" name="outdoor-activities">Yes</label>
         <label for="no"><input type="radio" id="no" value="No" name="outdoor-activities">No</label>
 
-        <p>What are your thoughts on this survey?</p>
+        <p>What are your experience\s about this language?</p>
         <label for="enjoyable"><input type="checkbox" id="enjoyable" value="Enjoyable" name="thoughts">Enjoyable</label>
         <label for="time-consuming"><input type="checkbox" id="time-consuming" value="Time Consuming" name="thoughts">Time Consuming</label>
         <label for="difficult"><input type="checkbox" id="difficult" value="Difficult" name="thoughts">Difficult</label>
 
-        <label for="comment">Any additional comments:</label>
+        <label for="comment">What are your thoughts about this langage:</label>
         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Write your comments here"></textarea>
 
         <input type="submit" id="submit" value="Submit">
